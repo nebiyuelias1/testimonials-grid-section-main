@@ -1,0 +1,146 @@
+:root {
+  --moderate-violet: hsl(263, 55%, 52%);
+  --grayish-blue: hsl(217, 19%, 35%);
+  --blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: var(--light-grayish-blue);
+}
+
+.container {
+  display: flex;
+  margin: 8vw 6vw;
+  flex-wrap: wrap;
+}
+
+.left {
+  flex-basis: 75%;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 25%;
+  flex-shrink: 1;
+}
+
+.card {
+  border-radius: 16px;
+  margin: 0.75rem 1rem;
+  padding: 2rem;
+}
+
+.card__img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 58px;
+  height: 58px;
+}
+
+.card__header {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.card__info {
+  margin-left: 1rem;
+}
+
+.card__name {
+  font-weight: 600;
+}
+
+.card__name--white {
+  color: var(--white);
+}
+
+.card__bio--white {
+  color: hsl(0, 0%, 100%, 0.5);
+}
+
+.card__name--light-gray {
+  color: var(--light-gray);
+}
+
+.card__bio--light-gray {
+  color: hsla(0, 0%, 81%, 0.5);
+}
+
+.card__primary-text {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.daniel {
+  background: var(--moderate-violet);
+  flex: 1 1 calc(65% - 2rem);
+  box-sizing: border-box;
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+}
+
+.jonathan {
+  background: var(--grayish-blue);
+  flex: 1 1 calc(35% - 2rem);
+  box-sizing: border-box;
+}
+.jeanette {
+  flex: 1 1 calc(35% - 2rem);
+  box-sizing: border-box;
+}
+.patrick {
+  background: var(--blackish-blue);
+  flex: 1 1 calc(65% - 2rem);
+  box-sizing: border-box;
+}
+
+.light-gray {
+  background: var(--white);
+}
+
+.white {
+  color: var(--white);
+}
+
+.white-70 {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.gray {
+  color: var(--light-gray);
+}
+
+.gray-70 {
+  color: hsla(0, 0%, 81%, 0.7);
+}
+
+.attribution {
+  text-align: center;
+}
